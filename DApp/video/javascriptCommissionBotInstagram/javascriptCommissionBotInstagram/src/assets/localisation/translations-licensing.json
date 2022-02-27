@@ -1,0 +1,46 @@
+{
+  "validating": {
+    "en": "Validating",
+    "fr": "En cours de validation",
+    "jp": "検証中"
+  },
+  "licenseAlreadyValidMessage": {
+    "en": "Your license is already valid, delete it if you want to validate a new one.",
+    "fr": "Votre license est valide, supprimez la si vous voulez valider une nouvelle."
+  },
+  "licenseKey": {
+    "en": "License Key",
+    "fr": "License"
+  },
+  "messageInformationsLicenseKey": {
+    "en": "Your purchase code can be used as a license key. If you don't have any license key, please contact me to obtain one.",
+    "fr": "Votre code d'achat peut être usé en tant que license. Si vous n'avez pas de license, contactez moi pour en obtenir une."
+  },
+  "messageWhenLicenseIsValid": {
+    "en": "You can now enjoy the software!",
+    "fr": "Vous pouvez maintenant profiter de cette application !",
+    "jp": "ソフトウェアをお楽しみいただけます!"
+  },
+  "enterYourLicenseKey": {
+    "en": "Enter your license key",
+    "fr": "Entrez votre license",
+    "jp": "ライセンスキーを入力してください"
+  },
+  "enterYourEmail": {
+    "en": "Enter your email",
+    "fr": "Entrez votre email"
+  },
+  "licenseValidation": {
+    "en": "License Validation",
+    "fr": "Validation de License"
+  },
+  "deleteLicenseKey": {
+    "en": "Delete license key",
+    "fr": "Supprimer la license"
+  },
+  "xIsEmpty": {
+    "en": "%%x%% is empty",
+    "fr": "%%x%% est vide",
+    "jp": "%%x%% 空です"
+  }
+}

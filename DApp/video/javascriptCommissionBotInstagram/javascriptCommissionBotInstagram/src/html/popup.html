@@ -1,0 +1,371 @@
+<!-- i use exact same file in both instagram twitter extensions
+version: 1
+update: 6/6/3030
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/src/assets/css/sb-admin-2.css" rel="stylesheet" />
+    <link href="/src/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/src/vendor/jquery/jquery-3.5.0.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Nunito';
+            src: url("/src/assets/fonts/Nunito-Regular.ttf");
+        }
+
+        body {
+            background-color: #FFFFFF;
+            /*
+            background: linear-gradient(to bottom left, #C13584, #FFDC80);//ig
+      			background: linear-gradient(to bottom left, #4FC0E8, #B2EAFD); //twitter
+            */
+            background: white;
+            width: 420px;
+            font-size: 86%;
+            font-family: 'Nunito';
+            color: #454545;
+            /* padding-bottom: 5px;
+            padding-top: 5px; */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 390px;
+            font-size: 100%;
+            border: none;
+            height: 30px;
+        }
+
+        a {
+            width: 140px;
+            text-align: center;
+            text-decoration: none;
+            color: #DF4000;
+        }
+
+        input[type=number] {
+            border: none;
+            height: 100%;
+            width: 100%;
+            font-size: 150%;
+            text-align: center;
+        }
+
+        input[type=radio] {
+            margin-right: 5px;
+        }
+
+        td:first-child:after {
+            content: attr(aria-label);
+        }
+
+        .tableFixHead {
+            overflow-y: auto;
+            height: auto;
+            max-height: 300px;
+        }
+
+        .tableFixHead th {
+            position: sticky;
+            top: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 0px;
+        }
+
+        th {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /*  text-align: left; */
+            background-color: #262626;
+            color: white;
+        }
+
+        .specialTable td {
+            padding: 0px;
+            /* height: 30px; */
+        }
+
+        .specialTable tr {
+            /* height: 30px; */
+        }
+
+        .imgInTableScrape {
+            height: 28px;
+            /* width: 30px; */
+            padding: 0px;
+            /* margin-bottom: -4px; */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #FFFFFF;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .shadow-strong {
+            /* box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.50) !important; */
+        }
+
+        #tdLog {
+            padding: 5px;
+        }
+
+        #divLog {
+            overflow-y: scroll;
+            max-height: 100px;
+            font-size: 9px;
+            text-align: left;
+            color: black;
+        }
+
+        #divStartStop {
+            margin-top: 14px;
+            margin-bottom: 12px;
+        }
+
+        #divLicense {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        #divHeaderInformations {
+            font-size: 10px;
+            padding: 2px;
+        }
+
+        #aNewslettersContact {
+            color: white;display:none;
+        }
+
+        #divStatusAndConfiguration {
+            margin-top: -12px;
+        }
+        #trUnfollows{
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divHeaderInformations" style="text-align:left;"> Version: <span id="spanVersion"></span>
+        <span style="float:right;">
+            <a target="_blank" id="aNewslettersContact">Newsletter / Contact</a>
+        </span>
+    </div>
+    <!-- DIV EXTENSION CONTENT -->
+    <div id="divMainContent" class="row nl">
+        <!-- <div class="card shadow"> -->
+        <div id="divStatusAndConfiguration" class="card-body">
+            <div style="display:none">
+                <div id="divTimer">00:00:00</div>
+                <hr>
+            </div>
+            <textarea id="copyClipboard" style="display:none"></textarea>
+            <div class="shadow-strong">
+                <table>
+                    <tr><div style="padding:4%"><img height="70px" width="100%" src="./logo.png"></div></tr>
+                    <tr>
+                        <th>{{translate.status}}</th>
+                        <td id="tdStatus">
+                            <div id="divStatus" style="color:white;font-weight:bold;">STOPPED</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>{{translate.mode}}</th>
+                        <td>
+                            <form>
+                                <label id="labelRadioBoxFollow"><input type="radio" name="type" id="radioBoxFollow" checked /><b>FOLLOW</b></label>
+                                <label id="labelRadioBoxUnFollow"><input type="hidden" name="type" id="radioBoxUnfollow" /><b></b></label>
+                                <label id="labelRadioBoxScrape"><input type="hidden" name="type" id="radioBoxScrape" /><b></b></label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr id="trFollows">
+                        <th>{{translate.follows}}</th>
+                        <td>
+                            <font id="divNbFollows" size="4">0</font>
+                        </td>
+                    </tr>
+                     <tr id="trUnfollows">
+                        <th>{{translate.unfollows}}</th>
+                        <td>
+                            <font id="divNbUnfollows" size="4">0</font>
+                        </td>
+                    </tr> 
+                    <tr id="trLastUsername">
+                        <th>{{translate.last}}</th>
+                        <td>
+                            <font id="divLastFollowed">-</font>
+                        </td>
+                    </tr>
+                    <tr id="trLog">
+                        <th>{{translate.log}}</th>
+                        <td id="tdLog">
+                            <div id="divLog"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- DIV START STOP -->
+            <div id="divStartStop">
+                <center>
+                    <button id="buttonStart" class="btn btn-info btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-flag"></i>
+                        </span>
+                        <span class="text"><b>START</b></span>
+                    </button>
+                    <span style="padding:10px"></span>
+                    <button id="buttonStop" class="btn btn-danger btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-stop"></i>
+                        </span>
+                        <span class="text"><b>STOP</b></span>
+                    </button>
+                </center>
+            </div>
+            
+            <div id="divConfigurationScrape" style="display: block">
+                <div class="shadow-strong">
+                    <div id="divTableFixed" class="tableFixHead">
+                        <table id="tableUsernamesInfos" class="specialTable">
+                            <thead>
+                                <tr>
+                                    <th id="thNumUsername">N</th>
+                                    <th id="thImgSrc">Image</th>
+                                    <th style="width:100px;max-width:100px" id="thUsernames">Username</th>
+                                    <th id="thIsFollowed">Followed</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tBodyUsernamesInfoList">
+                                <tr>
+                                    <td class='tdNumUsernameList'>-</td>
+                                    <td class='tdImgSrcList'>-</td>
+                                    <td class='tdUsernamesList'>-</td>
+                                    <td class='tdIsFollowedList'>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="shadow-strong">
+                    <table>
+                        <tr>
+                            <td id="tdNbUsernamesScraped">0</td>
+                            <th id="tdCopyUsernames" style="cursor: pointer;">Copy Usernames</th>
+                            <th id="tdClear" style="cursor: pointer;">Clear</th>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="shadow-strong">
+                    <table>
+                        <tr>
+                            <th>Export</th>
+                            <th id="exportXLS" style="cursor: pointer;background-color:GREEN"><i class="fas fa-file-excel"></i> XLS</th>
+                            <th id="exportCSV" style="cursor: pointer;background-color:MediumSeaGreen "><i class="fas fa-file-csv"></i> CSV</th>
+                            <th id="exportTXT" style="cursor: pointer;background-color:SkyBlue"><i class="fas fa-file-alt"></i> TXT</th>
+                            <th id="exportHTML" style="cursor: pointer;background-color:DarkCyan"><i class="fas fa-file-code"></i> HTML</th>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="shadow-strong">
+                    <table>
+                        <tr>
+                            <th>Sleep (seconds)</th>
+                            <th>For X usernames</th>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="inputNumberSleepTimeScrapeSeconds" min="1" value="30" /></td>
+                            <td><input type="number" id="inputNumberSleepEveryXUsernamesScraped" min="12" value="50" /></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Max usernames</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="number" id="inputNumberUsernamesScrapedMax" min="1" value="100" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <iframe id="txtArea1" style="display:none"></iframe>
+            </div>
+            <div id="divConfigurationFollowOrUnfollow" class="shadow-strong" style="display: none">
+                <table>
+                    <tr>
+                        <th colspan="2">Sleep between follow</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font size=2>Minimun</font><input type="number" id="inputNumberDelaySecMin" min="1" value="60" style="margin-top:2px" />
+                        </td>
+                        <td>
+                            <font size=2>Maximum</font><input type="number" id="inputNumberDelaySecMax" min="1" value="120" style="margin-top:2px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sleep (minutes)</th>
+                        <th>For X follows</th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="inputNumberBreakTimeInMins" min="1" value="10" /></td>
+                        <td><input type="number" id="inputNumberBreakEveryXFollowsOrUnfollows" min="2" value="20" /></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Max follows</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="number" id="inputNumberFollowUnfollowMax" min="1" value="50" /></td>
+                    </tr>
+                    <tr>
+                        <th colspan="1">Whitelist</th>
+                        <th colspan="1"><label><input type="checkbox" id="autoWhitelist" value="1"> Auto whitelist</label></th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="textareaWhitelist"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div style="display:none">
+        <a target="_blank" href="https://codecanyon.net/user/automatize/portfolio">
+            <img src="/src/assets/img/icons/icon_automatize.png" style="width:24px;height:24px;padding:0px;margin:0px" /> Automatize Portfolio </a>
+    </div>
+    <script type="module" src="/src/js/class/Translation.js"></script>
+    <script type="module" src="/src/js/translate.js"></script>
+    <script src="/src/js/utils-chrome-extension.js"></script>
+    <script type="module" src="/src/js/popup.js"></script>
+    <script src="/src/js/instagram-extension.js"></script>
+    <script src="/src/js/twitter-extension.js"></script>
+    <script src="/src/js/tiktok-extension.js"></script>
+</body>
+
+</html>

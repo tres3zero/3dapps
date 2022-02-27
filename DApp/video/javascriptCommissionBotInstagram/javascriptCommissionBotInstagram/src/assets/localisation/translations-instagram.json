@@ -1,0 +1,66 @@
+{
+  "mutualFollowers": {
+    "en": "Mutual followers",
+    "fr": "Abonnés en commun"
+  },
+  "posts": {
+    "en": "Posts",
+    "fr": "Publications"
+  },
+  "comments": {
+    "en": "Comments",
+    "fr": "Commentaires"
+  },
+  "business": {
+    "en": "Business",
+    "fr": "Entreprise"
+  },
+  "verified": {
+    "en": "Verified",
+    "fr": "Vérifié"
+  },
+  "private": {
+    "en": "Private",
+    "fr": "Privé"
+  },
+  "like": {
+    "en": "Like",
+    "fr": "J'aime"
+  },
+  "follow": {
+    "en": "Follow",
+    "fr": "S'abonner"
+  },
+  "followers": {
+    "en": "Followers",
+    "fr": "Abonnés"
+  },
+  "following": {
+    "en": "Following",
+    "fr": "Abonnements"
+  },
+  "follows": {
+    "en": "Follows",
+    "fr": "Abonnements"
+  },
+  "unfollow": {
+    "en": "Unfollow",
+    "fr": "Se désabonner"
+  },
+  "unfollows": {
+    "en": "Unfollows",
+    "fr": "Désabonnements"
+  },
+  "watchStory": {
+    "en": "Watch Story",
+    "fr": "Voir la Story"
+  },
+  "watchStories": {
+    "en": "Watch Stories",
+    "fr": "Voir les Stories"
+  },
+  "directMessages": {
+    "en": "Direct Messages",
+    "fr": "Messages Direct"
+  }
+}

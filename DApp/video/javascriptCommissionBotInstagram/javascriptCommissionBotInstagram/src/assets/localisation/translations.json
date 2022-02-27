@@ -1,0 +1,584 @@
+{
+  "history": {
+    "en": "History",
+    "fr": "Historiques"
+  },
+  "only": {
+    "en": "Only",
+    "fr": "Seulement"
+  },
+  "atLeast1X": {
+    "en": "At least 1 %%x%%",
+    "fr": "Au moins 1 %%x%%"
+  },
+  "howItWorks": {
+    "en": "How it works",
+    "fr": "Comment ça marche"
+  },
+  "getRealLikes": {
+    "en": "Get Real Likes",
+    "fr": "Vraies Mentions J'aime"
+  },
+  "credits": {
+    "en": "Credits",
+    "fr": "Crédits"
+  },
+  "getRealLikesExplanations": {
+    "en": "The Bot will like automatically the posts of other users who have activated this systel too, you don't have to do anything, you will get 1 credit per Like. Then you can use your credits to get real likes on the posts of your choice. 1 credit = 1 real Like.",
+    "fr": "Le Bot va automatiquement aimer les publication des autres utilisateurs qui ont aussi activé ce système, vous n'avez rien à faire, vous recevrez 1 crédit par Mention J'aime. Puis vous pouvez utiliser vos crédits pour obtenir de vrais Mention J'aime sur les publications de votre choix. 1 crédit = 1 vraie Mention J'aime."
+  },
+  "shareLikes": {
+    "en": "Share Likes",
+    "fr": "getRealLikesExplanations fr"
+  },
+  "getCreditsExplanation": {
+    "en": "You will get 1 credit per liked post.",
+    "fr": "Vous recevrez 1 crédit par publication aimée."
+  },
+  "spendCreditsExplanation": {
+    "en": "You will spend 1 credit per like.",
+    "fr": "Vous dépenserez 1 crédit par Mention J'aime"
+  },
+  "accountNotFound": {
+    "en": "Account not found",
+    "fr": "Compte non trouvé"
+  },
+  "language": {
+    "en": "Language",
+    "fr": "Langage"
+  },
+  "selectLanguage": {
+    "en": "Select language",
+    "fr": "Sélectionnez la langue"
+  },
+  "numberOfActions": {
+    "en": "Number of actions",
+    "fr": "Nombre d'actions"
+  },
+  "days": {
+    "en": "Days",
+    "fr": "Jours"
+  },
+  "separateWithThisSymbol": {
+    "en": "Separate the different messages with \";;\", you can include the name of the user (not yours) with the tag {{username}}",
+    "fr": "Séparez les différents messages avec \";;\", vous pouvez inclure le nom de l'utilisateur (pas le votre) avec la balise {{username}}"
+  },
+  "mode": {
+    "en": "Mode",
+    "fr": "Mode"
+  },
+  "informationAboutChromeOrChromiumPath": {
+    "en": "The Bot needs a web browser to perfom actions on Instagram. You can use your own version of Chromium or Google Chrome, note that the Bot was tested on Chromium Version 78.0.3882.0 (Developer Build) (64-bit) (686378) and Chrome Version 80.0.3987.149 (Official Build) (64-bit).<br><br>You can download the lastest version of Chromium here: <a id='iconDownloadNewChromium' class='fas fa-fw fa-download'></a><br>You can download old versions here: <a id='iconDownloadOldChromium' class='fas fa-fw fa-download'></a>",
+    "fr": "Le Bot a besoin d'un navigateur web pour effectuer les actions sur Instagram. Vous pouvez utiliser votre propre version de Chromium ou Google Chrome, notez que le Bot fonctionne parfaitement avec Chromion Version 78.0.3882.0 (Build de développement) (64 bits) (686378) et Chrome Version 80.0.3987.149 (Build de développement) (64 bits).<br><br>Vous pouvez télécharger la dernière version de Chromium ici : <a id='iconDownloadNewChromium' class='fas fa-fw fa-download'></a><br>Vous pouvez télécharger les anciennes version ici : <a id='iconDownloadOldChromium' class='fas fa-fw fa-download'></a>"
+  },
+  "cannotTakeScreenshotNow": {
+    "en": "You cannot take a screenshot now.",
+    "fr": "Vous ne pouvez pas prendre de capture d'écran maintenant."
+  },
+  "headlessMode": {
+    "en": "Headless mode (Invisible)",
+    "fr": "Mode Headless (Invisible)"
+  },
+  "headlessModeExplanation": {
+    "en": "Headless mode will launch the browser without GUI, it will not display anything on the screen, you still can see what's happening by clicking on 'Activity' then 'Screenshots'.",
+    "fr": "Le mode Headless lancera le navigateur sans interface graphique, rien ne sera affiché à l'écran, vous pouvez toujours voir ce qu'il se passe en cliquant sur 'Activité' puis 'Captures d'écran'."
+  },
+  "example": {
+    "en": "Example",
+    "fr": "Exemple"
+  },
+  "sendAnEmail": {
+    "en": "Send an email",
+    "fr": "Envoyer un email"
+  },
+  "enterANewNameAndSaveToAddANewConfiguration": {
+    "en": "Enter a new name and save to add a new configuration",
+    "fr": "Entrez un nouveau nom et sauvegardez pour ajouter une nouvelle configuration"
+  },
+  "welcome": {
+    "en": "Welcome",
+    "fr": "Bienvenue"
+  },
+  "howToContactMe": {
+    "en": "How and why contact me",
+    "fr": "Comment et pourquoi me contacter"
+  },
+  "chooseAPhone": {
+    "en": "Choose a phone",
+    "fr": "Choisissez un téléphone"
+  },
+  ":": {
+    "en": ":",
+    "fr": " :"
+  },
+  "takeScreenshot": {
+    "en": "Take a screenshot",
+    "fr": "Prendre une capture d'écran"
+  },
+  "invalidPath": {
+    "en": "Invalid path",
+    "fr": "Chemin non valide"
+  },
+  "path": {
+    "en": "Path",
+    "fr": "Chemin"
+  },
+  "modes": {
+    "en": "Modes",
+    "fr": "Modes"
+  },
+  "activity": {
+    "en": "Activity",
+    "fr": "Activité"
+  },
+  "botStartedWithX": {
+    "en": "Bot started with %%x%%.",
+    "fr": "Bot démarré avec %%x%%."
+  },
+  "chooseMode": {
+    "en": "Choose mode",
+    "fr": "Choode mode"
+  },
+  "dashboard": {
+    "en": "Dashboard",
+    "fr": "Tableau de bord"
+  },
+  "storiesWatched": {
+    "en": "Stories watched",
+    "fr": "Stories regardées"
+  },
+  "logs": {
+    "en": "Logs",
+    "fr": "Enregistrements"
+  },
+  "other": {
+    "en": "Other",
+    "fr": "Autre"
+  },
+  "comments": {
+    "en": "Comments",
+    "fr": "Commentaires"
+  },
+  "comment": {
+    "en": "Comment",
+    "fr": "Commenter"
+  },
+  "directMessage": {
+    "en": "Direct Message",
+    "fr": "Message Direct"
+  },
+  "messages": {
+    "en": "Messages",
+    "fr": "Messages"
+  },
+  "pathChromiumOrChrome": {
+    "en": "Set the path for Chromium or Google Chrome",
+    "fr": "Entrez le chemin de Chromium ou Google Chrome"
+  },
+  "informations": {
+    "en": "Informations",
+    "fr": "Informations"
+  },
+  "theBotIsNotStartedForX": {
+    "en": "The Bot is not started for %%x%%.",
+    "fr": "Le Bot n'a pas démarré pour %%x%%."
+  },
+  "theBotIsAlreadyStartedForX": {
+    "en": "The Bot has already started for %%x%%.",
+    "fr": "Le Bot a déjà démarré pour %%x%%."
+  },
+  "botsStarted": {
+    "en": "Bot(s) running:",
+    "fr": "Bot(s) en cours d'exécution :"
+  },
+  "lastStatus": {
+    "en": "Last status:",
+    "fr": "Dernier état:"
+  },
+  "contact": {
+    "en": "Contact",
+    "fr": "Contact"
+  },
+  "testWithArgs": {
+    "en": "Arg1: %%arg1%%, arg1 again: %%arg1%%, arg2: %%arg2%%",
+    "fr": "Entrez vos identifiants Instagram"
+  },
+  "enterYourInstagramAccountCredentials": {
+    "en": "Enter your Instagram credentials",
+    "fr": "Entrez vos identifiants Instagram"
+  },
+  "settings": {
+    "en": "Settings",
+    "fr": "Paramètres"
+  },
+  "availableSoon": {
+    "en": "Available soon",
+    "fr": "Disponible prochainement"
+  },
+  "selectConfiguration": {
+    "en": "Select configuration",
+    "fr": "Sélectionnez la configuration"
+  },
+  "accountsList": {
+    "en": "Accounts list",
+    "fr": "Liste des comptes"
+  },
+  "bot": {
+    "en": "Bot",
+    "fr": "Bot"
+  },
+  "statistics": {
+    "en": "Statistics",
+    "fr": "Statistiques"
+  },
+  "software": {
+    "en": "Software",
+    "fr": "Logiciel"
+  },
+  "configurationsList": {
+    "en": "Configurations list",
+    "fr": "Liste des configurations"
+  },
+  "configurations": {
+    "en": "Configurations",
+    "fr": "Configurations"
+  },
+  "problemWithAccountsFile": {
+    "en": "There is a problem with the accounts file.",
+    "fr": "Il y a un problème avec le fichier des comptes."
+  },
+  "problemWithFile": {
+    "en": "There is a problem with the file.",
+    "fr": "Il y a un problème avec le fichier."
+  },
+  "thisPageDoesNotExist": {
+    "en": "This page does not exist.",
+    "fr": "Cette page n'existe pas."
+  },
+  "error": {
+    "en": "Error",
+    "fr": "Erreur",
+    "jp": "エラー"
+  },
+  "tryToFixFile": {
+    "en": "Try to fix the file",
+    "fr": "Essayer de réparer le fichier"
+  },
+  "cannotFixTheFile": {
+    "en": "Cannot fix this file.",
+    "fr": "Impossible de réparer ce fichier."
+  },
+  "fileFixed": {
+    "en": "File fixed!",
+    "fr": "Fichier réparé !"
+  },
+  "yes": {
+    "en": "Yes",
+    "fr": "Oui"
+  },
+  "validate": {
+    "en": "Validate",
+    "fr": "Valider",
+    "jp": "検証"
+  },
+  "no": {
+    "en": "No",
+    "fr": "Non"
+  },
+  "both": {
+    "en": "Both",
+    "fr": "Les deux"
+  },
+  "show": {
+    "en": "Show",
+    "fr": "Afficher"
+  },
+  "search": {
+    "en": "Search",
+    "fr": "Chercher"
+  },
+  "next": {
+    "en": "Next",
+    "fr": "Suivant"
+  },
+  "previous": {
+    "en": "Previous",
+    "fr": "Précédent"
+  },
+  "all": {
+    "en": "All",
+    "fr": "Tous"
+  },
+  "noDataAvailable": {
+    "en": "No data available in table.",
+    "fr": "Aucune donnée disponible."
+  },
+  "deleteAccountsFile": {
+    "en": "Delete accounts file",
+    "fr": "Supprimer le fichier des comptes"
+  },
+  "showing": {
+    "en": "Showing",
+    "fr": "Affichage"
+  },
+  "theFile": {
+    "en": "The file",
+    "fr": "Le fichier"
+  },
+  "enterConfigurationName": {
+    "en": "Enter a configuration name",
+    "fr": "Entrez un nom de configuration"
+  },
+  "file": {
+    "en": "File",
+    "fr": "Fichier"
+  },
+  "?": {
+    "en": "?",
+    "fr": " ?"
+  },
+  "!": {
+    "en": "!",
+    "fr": " !"
+  },
+  ":": {
+    "en": ":",
+    "fr": " :"
+  },
+  "accounts": {
+    "en": "Accounts",
+    "fr": "Comptes"
+  },
+  "currentLicense": {
+    "en": "Current license",
+    "fr": "License actuelle"
+  },
+  "selectAnAccount": {
+    "en": "Select an account",
+    "fr": "Sélectionnez un compte"
+  },
+  "account": {
+    "en": "Account",
+    "fr": "Compte"
+  },
+  "joinedRecently": {
+    "en": "Joined recently",
+    "fr": "Rejoint récemment"
+  },
+  "clickHere": {
+    "en": "Click here",
+    "fr": "Cliquez ici"
+  },
+  "addAtLeast1Account": {
+    "en": "Add at least 1 account.",
+    "fr": "Ajoutez au moins 1 compte."
+  },
+  "recently": {
+    "en": "Recently",
+    "fr": "Récemment"
+  },
+  "old": {
+    "en": "Old",
+    "fr": "Ancien"
+  },
+  "ignore": {
+    "en": "Ignore",
+    "fr": "Ignorer"
+  },
+  "options": {
+    "en": "Options",
+    "fr": "Options"
+  },
+  "START": {
+    "en": "START",
+    "fr": "DÉMARRER"
+  },
+  "STOP": {
+    "en": "STOP",
+    "fr": "ARRÊTER"
+  },
+  "seconds": {
+    "en": "Seconds",
+    "fr": "Secondes"
+  },
+  "pauseBetween": {
+    "en": "Pause between",
+    "fr": "Arrêter entre"
+  },
+  "configuration": {
+    "en": "Configuration",
+    "fr": "Configuration"
+  },
+  "modeLike": {
+    "en": "Mode - Like",
+    "fr": "Mode - J'aime"
+  },
+  "hashtag": {
+    "en": "Hashtag",
+    "fr": "Hashtag"
+  },
+  "locationID": {
+    "en": "Location ID",
+    "fr": "Localisation ID"
+  },
+  "hashtags": {
+    "en": "Hashtags",
+    "fr": "Hashtags"
+  },
+  "accounts": {
+    "en": "Accounts",
+    "fr": "Comptes"
+  },
+  "limitReached": {
+    "en": "Limit reached.",
+    "fr": "Limite atteinte."
+  },
+  "locationIDs": {
+    "en": "Location IDs",
+    "fr": "Localisation IDs"
+  },
+  "likes": {
+    "en": "Likes",
+    "fr": "J'aime"
+  },
+  "per": {
+    "en": "Per",
+    "fr": "Par"
+  },
+  "hours": {
+    "en": "Hours",
+    "fr": "Heures"
+  },
+  "hour": {
+    "en": "Hour",
+    "fr": "Heure"
+  },
+  "pause": {
+    "en": "Pause",
+    "fr": "Pause"
+  },
+  "stop": {
+    "en": "Stop",
+    "fr": "Stop"
+  },
+  "start": {
+    "en": "Start",
+    "fr": "Démarrer"
+  },
+  "sleepSeconds": {
+    "en": "Sleep (seconds)",
+    "fr": "Pause (secondes)"
+  },
+  "atLeastOneHashtagOrLocationID": {
+    "en": "You need at least 1 hashtag or location ID.",
+    "fr": "Vous devez renseignez au moins 1 hashtag ou localisation ID."
+  },
+  "separateAndValidateWithSpace": {
+    "en": "Separate and validate with space",
+    "fr": "Séparez et validez avec espace"
+  },
+  "password": {
+    "en": "Password",
+    "fr": "Mots de passe"
+  },
+  "email": {
+    "en": "Email",
+    "fr": "Email"
+  },
+  "messageCookiesDeleted": {
+    "en": "Cookies deleted for username %%username%%.",
+    "fr": "Cookies supprimés pour l'utilisateur %%username%%."
+  },
+  "accountDeleted": {
+    "en": "Account %%username%% deleted.",
+    "fr": "Compte %%username%% supprimé."
+  },
+  "xHasBeenDeleted": {
+    "en": "%%x%% has been deleted.",
+    "fr": "%%x%% a été supprimé(e)."
+  },
+  "xAddedSuccessfully": {
+    "en": "%%x%% added successfully!",
+    "fr": "%%a a été ajouté(e) avec succès !"
+  },
+  "xAdded": {
+    "en": "%%x%% added.",
+    "fr": "%%a a été ajouté(e)."
+  },
+  "deleteX": {
+    "en": "Delete %%x%%",
+    "fr": "Supprimer %%x%%"
+  },
+  "usernameAlreadyExists": {
+    "en": "This username already exists!",
+    "fr": "Cette utilisateur existe déjà !"
+  },
+  "xAlreadyExists": {
+    "en": "%%x%% already exists!",
+    "fr": "%%x%% existe déjà !"
+  },
+  "xHasBeenSaved": {
+    "en": "%%x%% has been saved.",
+    "fr": "%%x%% a été saugegardé(e)."
+  },
+  "settingsSaved": {
+    "en": "Settings saved.",
+    "fr": "Paramètres sauvegardés."
+  },
+  "editProxy": {
+    "en": "Edit proxy",
+    "fr": "Modifier le proxy"
+  },
+  "setEmptyURLToDeleteProxy": {
+    "en": "Set empty URL to delete proxy",
+    "fr": "Entrez une URL vide pour supprimer le proxy"
+  },
+  "proxyUrlExample": {
+    "en": "socks4://11.22.33.44:5555",
+    "fr": "socks4://11.22.33.44:5555"
+  },
+  "device": {
+    "en": "Device",
+    "fr": "Appareil"
+  },
+  "save": {
+    "en": "Save",
+    "fr": "Sauvegarder"
+  },
+  "proxy": {
+    "en": "Proxy",
+    "fr": "Proxy"
+  },
+  "addConfiguration": {
+    "en": "Add configuration",
+    "fr": "Ajouter une configuration"
+  },
+  "cookies": {
+    "en": "Cookies",
+    "fr": "Cookies"
+  },
+  "none": {
+    "en": "None",
+    "fr": "Aucun"
+  },
+  "username": {
+    "en": "Username",
+    "fr": "Nom d'utilisateur"
+  },
+  "selectAccount": {
+    "en": "Select account",
+    "fr": "Selectionnez votre compte"
+  },
+  "addAccount": {
+    "en": "Add account",
+    "fr": "Ajouter un compte"
+  },
+  "dateAdded": {
+    "en": "Date added",
+    "fr": "Date d'ajout"
+  },
+  "delete": {
+    "en": "Delete",
+    "fr": "Supprimer"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "setEnglishLanguage": {
+    "en": "Set the language to English (read the Documentation for more details).",
+    "fr": "Mettez la langue en Anglais (lisez la Documentation pour plus de détails)."
+  },
+  "last": {
+    "en": "Last",
+    "fr": "Dernier"
+  }, 
+  "log": {
+    "en": "Log",
+    "fr": "Log"
+  },
+  "status": {
+    "en": "Status",
+    "fr": "Status"
+  }
+}

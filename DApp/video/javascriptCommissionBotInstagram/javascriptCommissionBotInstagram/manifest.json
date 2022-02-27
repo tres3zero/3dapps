@@ -1,0 +1,60 @@
+{
+    "version": "1.0",
+    "name": "Instagram Auto Follow",
+    "short_name": "InstagramAutoFollowScraper",
+    "description": "Follow Instagram accounts",
+    "author": {
+        "name": "",
+        "managerID": "",
+        "itemID": "",
+        "dateUpdate": "10/06/2020",
+        "instagramID": "",
+        "isAutomatize": true,
+        "newsletterLink": ""
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "permissions": [
+        "<all_urls>",
+        "activeTab",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "contextMenus",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "./src/js/background.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.instagram.com/*"
+            ],
+            "run_at": "document_start",
+            "js": [
+                "./src/js/content.js",
+                "./src/js/utils-chrome-extension.js",
+                "./src/js/instagram-extension.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "./src/html/popup.html",
+        "default_icon": {
+            "16": "./src/assets/img/icons/icon_extension_16p.png",
+            "32": "./src/assets/img/icons/icon_extension_32p.png",
+            "48": "./src/assets/img/icons/icon_extension_48p.png",
+            "128": "./src/assets/img/icons/icon_extension_128p.png"
+        }
+    },
+    "icons": {
+        "16": "./src/assets/img/icons/icon_extension_16p.png",
+        "32": "./src/assets/img/icons/icon_extension_32p.png",
+        "48": "./src/assets/img/icons/icon_extension_48p.png",
+        "128": "./src/assets/img/icons/icon_extension_128p.png"
+    },
+    "manifest_version": 2
+}
